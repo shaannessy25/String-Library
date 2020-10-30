@@ -15,4 +15,6 @@ const allCaps = (str) => {
 
 console.log(allCaps(str))
 
-
+// export{capitalize, allCaps}
+module.exports.capitalize = capitalize
+module.exports.allCaps = allCaps
