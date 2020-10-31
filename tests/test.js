@@ -20,10 +20,13 @@ test("Testing capitalize words", () => {
 })
 
 
-// test("Testing removeExtraSpaces from input string", () =>  {
-//     expect(stringLib.removeExtraSpaces(" Hello")).toBe("Hello")
-//     expect(stringLib.removeExtraSpaces(" Hello World ! ")).toBe("Hello World!")
-// })
+test("Testing removeExtraSpaces from input string", () =>  {
+    expect(stringLib.removeExtraSpaces(" Hello")).toBe("Hello")
+    expect(stringLib.removeExtraSpaces(" hello      world ")).toBe("hello world")
+    
+    //This test is an edge case involving symbols in the input strings
+    // expect(stringLib.removeExtraSpaces(" Hello World ! ")).toBe("Hello World! ")  
+})
 
 // test("Testing kabob case", () => {
 //     expect(stringLib.kabobCase("Hello World")).toBe("Hello-World")

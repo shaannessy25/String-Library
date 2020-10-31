@@ -16,15 +16,17 @@ const capitalizeWords = (str) => {
     
     const splitStr = str.toLowerCase().split(' ');
     for (let i = 0; i < splitStr.length; i++) {
-        // Assign it back to the array
+        // Assign it back to the array 
         splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
     }
     // Directly return the joined string
     return splitStr.join(' ');
 }
 
-const removeExtraSpaces = (str) => {
-    return null
+//Challenge 4 remove extra spaces from input string
+const removeExtraSpaces = (str, joiner = ' ') => {
+    return (str.trim()).split(' ').map((word) => word.trim()).filter((elem) => elem !== '')
+    .join(joiner);
 }
 
 
