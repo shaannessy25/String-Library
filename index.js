@@ -14,7 +14,13 @@ const allCaps = (str) => {
 //Challenge 3 take input string and capitalizes every first letter of every word
 const capitalizeWords = (str) => {
     
-    return str.toLowerCase()
+    const splitStr = str.toLowerCase().split(' ');
+    for (let i = 0; i < splitStr.length; i++) {
+        // Assign it back to the array
+        splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
+    }
+    // Directly return the joined string
+    return splitStr.join(' ');
 }
 
 const removeExtraSpaces = (str) => {

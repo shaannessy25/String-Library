@@ -20,28 +20,27 @@ test("Testing capitalize words", () => {
 })
 
 
-test("Testing removeExtraSpaces from input string", () =>  {
-    expect(stringLib.removeExtraSpaces(" Hello")).toBe("Hello")
-    expect(stringLib.removeExtraSpaces(" Hello World ! ")).toBe("Hello World!")
-})
+// test("Testing removeExtraSpaces from input string", () =>  {
+//     expect(stringLib.removeExtraSpaces(" Hello")).toBe("Hello")
+//     expect(stringLib.removeExtraSpaces(" Hello World ! ")).toBe("Hello World!")
+// })
 
-test("Testing kabob case", () => {
-    expect(stringLib.kabobCase("Hello World")).toBe("Hello-World")
-    expect(stringLib.kabobCase("find my folder")).toBe("find-my-folder")
-})
+// test("Testing kabob case", () => {
+//     expect(stringLib.kabobCase("Hello World")).toBe("Hello-World")
+//     expect(stringLib.kabobCase("find my folder")).toBe("find-my-folder")
+// })
 
-test("Testing snakeCase", () => {
-    expect(stringLib.snakeCase("Hello World")).toBe("Hello_World")
-    expect(stringLib.snakeCase("find my folder")).toBe("find_my_folder")
-})
+// test("Testing snakeCase", () => {
+//     expect(stringLib.snakeCase("Hello World")).toBe("Hello_World")
+//     expect(stringLib.snakeCase("find my folder")).toBe("find_my_folder")
+// })
 
-test("Testing camelCase", () => {
-    expect(stringLib.camelCase("Hello World")).toBe("helloWorld")
-    expect(stringLib.camelCase("Correct path")).toBe("correctPath")
+// test("Testing camelCase", () => {
+//     expect(stringLib.camelCase("Hello World")).toBe("helloWorld")
+//     expect(stringLib.camelCase("Correct path")).toBe("correctPath")
 
-})
+// })
 
-test("Testing Shift", () => {
-    expect(stringLib.shift("Hello")).toBe("elloH")
-    expect(stringLib.shift("foo bar", 3)).toBe("barfoo")
-})
+// test("Testing Shift", () => {
+//     expect(stringLib.shift("Hello")).toBe("elloH")
+//     expect(stringLib.shift("foo bar", 3)).toBe("barfoo")
