@@ -29,10 +29,14 @@ const removeExtraSpaces = (str, joiner = ' ') => {
     .join(joiner);
 }
 
-
+//Challenge 5 turn input string into kabob case
 const kabobCase = (str) => {
-    return null
+    return str
+        .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
+        .map((x) => x.toLowerCase())
+        .join('-');
 }
+
 
 const snakeCase = (str) => {
     return null

@@ -23,15 +23,15 @@ test("Testing capitalize words", () => {
 test("Testing removeExtraSpaces from input string", () =>  {
     expect(stringLib.removeExtraSpaces(" Hello")).toBe("Hello")
     expect(stringLib.removeExtraSpaces(" hello      world ")).toBe("hello world")
-    
+
     //This test is an edge case involving symbols in the input strings
     // expect(stringLib.removeExtraSpaces(" Hello World ! ")).toBe("Hello World! ")  
 })
 
-// test("Testing kabob case", () => {
-//     expect(stringLib.kabobCase("Hello World")).toBe("Hello-World")
-//     expect(stringLib.kabobCase("find my folder")).toBe("find-my-folder")
-// })
+test("Testing kabob case", () => {
+    expect(stringLib.kabobCase("Hello World")).toBe("hello-world")
+    expect(stringLib.kabobCase("find my folder")).toBe("find-my-folder")
+})
 
 // test("Testing snakeCase", () => {
 //     expect(stringLib.snakeCase("Hello World")).toBe("Hello_World")
