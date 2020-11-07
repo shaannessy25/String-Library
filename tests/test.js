@@ -38,12 +38,14 @@ test("Testing kabob case", () => {
 //     expect(stringLib.snakeCase("find my folder")).toBe("find_my_folder")
 // })
 
-// test("Testing camelCase", () => {
-//     expect(stringLib.camelCase("Hello World")).toBe("helloWorld")
-//     expect(stringLib.camelCase("Correct path")).toBe("correctPath")
+test("Testing camelCase", () => {
+    expect(stringLib.camelCase("Hello World")).toBe("helloWorld")
+    expect(stringLib.camelCase("Correct path")).toBe("correctPath")
 
-// })
+})
 
 // test("Testing Shift", () => {
 //     expect(stringLib.shift("Hello")).toBe("elloH")
-//     expect(stringLib.shift("foo bar", 3)).toBe("barfoo")
+//     expect(stringLib.shift("foo bar", 3)).toBe("barfoo") 
+
+// })
