@@ -44,8 +44,8 @@ test("Testing camelCase", () => {
 
 })
 
-// test("Testing Shift", () => {
-//     expect(stringLib.shift("Hello")).toBe("elloH")
-//     expect(stringLib.shift("foo bar", 3)).toBe("barfoo") 
+test("Testing Shift", () => {
+    expect(stringLib.shift("Hello", 1)).toBe("oHell")
+    expect(stringLib.shift("foo bar", 3)).toBe("barfoo ") 
 
-// })
+})

@@ -55,12 +55,21 @@ function camelCase(str) {
 }
 
 
-const shift = (str) => {
-    return null
-}
+function shift(str = '', step = 0) {
+    const { length } = str;
+    const index = step % length;
+    const shift = index < 0 ? length + index : index;
+    if (!str || length === 1 || !shift) {
+        return str;
+    }
+    const reverseString = (str) => str.split('').reverse().join('');
+    const newStr = reverseString(str);
+    const s1 = newStr.slice(0, shift);
+    const s2 = newStr.slice(shift);
+    return reverseString(s1) + reverseString(s2);
+};
 
-
-
+console.log(shift("hello world", 3))
 
 // export{capitalize, allCaps}
 module.exports.capitalize = capitalize
