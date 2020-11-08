@@ -33,10 +33,10 @@ test("Testing kabob case", () => {
     expect(stringLib.kabobCase("find my folder")).toBe("find-my-folder")
 })
 
-// test("Testing snakeCase", () => {
-//     expect(stringLib.snakeCase("Hello World")).toBe("Hello_World")
-//     expect(stringLib.snakeCase("find my folder")).toBe("find_my_folder")
-// })
+test("Testing snakeCase", () => {
+    expect(stringLib.snakeCase("Hello World")).toBe("hello_world")
+    expect(stringLib.snakeCase("find my folder")).toBe("find_my_folder")
+})
 
 test("Testing camelCase", () => {
     expect(stringLib.camelCase("Hello World")).toBe("helloWorld")
