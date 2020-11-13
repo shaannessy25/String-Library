@@ -1,18 +1,18 @@
 
 // Challenge 1 take input and capitalize first letter only
-const capitalize = (str) => {
+String.prototype.capitalize = (str) => {
     return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase()
 }
 
 
 //Challenge 2 takes input string and capitalizes every letter of the string
-const allCaps = (str) => {
+String.prototype.allCaps = (str) => {
     return str.toUpperCase()
 }
 
 
 //Challenge 3 take input string and capitalizes every first letter of every word
-const capitalizeWords = (str) => {
+String.prototype.capitalizeWords = (str) => {
     
     const splitStr = str.toLowerCase().split(' ');
     for (let i = 0; i < splitStr.length; i++) {
@@ -25,13 +25,13 @@ const capitalizeWords = (str) => {
 
 console.log(capitalizeWords("hello yall"))
 //Challenge 4 remove extra spaces from input string
-const removeExtraSpaces = (str, joiner = ' ') => {
+String.prototype.removeExtraSpaces = (str, joiner = ' ') => {
     return (str.trim()).split(' ').map((word) => word.trim()).filter((elem) => elem !== '')
     .join(joiner);
 }
 
 //Challenge 5 turn input string into kabob case
-const kabobCase = (str) => {
+String.prototype.kabobCase = (str) => {
     return str
         .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
         .map((x) => x.toLowerCase())
@@ -39,7 +39,7 @@ const kabobCase = (str) => {
 }
 
 //Challenge 6 convert input string to snake case
-const snakeCase = (str) => {
+String.prototype.snakeCase = (str) => {
     return str
         .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
         .map(x => x.toLowerCase())
@@ -48,14 +48,14 @@ const snakeCase = (str) => {
 
 
 //Challenge 7 convert input string into camelCase
-function camelCase(str) {
+String.protoype.camelCase = (str) => {
     return str.replace(/(?:^\w|[A-Z]|\b\w)/g, function (word, index) {
         return index === 0 ? word.toLowerCase() : word.toUpperCase();
     }).replace(/\s+/g, '');
 }
 
 
-function shift(str = '', step = 0) {
+String.protoype.shift = (str = '', step = 0) => {
     const { length } = str;
     const index = step % length;
     const shift = index < 0 ? length + index : index;
@@ -69,7 +69,7 @@ function shift(str = '', step = 0) {
     return reverseString(s1) + reverseString(s2);
 };
 
-console.log(shift("hello world", 3))
+
 
 // export{capitalize, allCaps}
 module.exports.capitalize = capitalize
