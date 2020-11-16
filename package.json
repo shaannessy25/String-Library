@@ -1,7 +1,7 @@
 {
-  "name": "stringlib",
+  "name": "@shaanhurley/string-package",
   "version": "1.0.0",
-  "description": "",
+  "description": "String library",
   "main": "index.js",
   "scripts": {
     "test": "jest"
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/shaannessy25/String-Library.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "shaan hurley",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/shaannessy25/String-Library/issues"
@@ -19,5 +19,9 @@
   "homepage": "https://github.com/shaannessy25/String-Library#readme",
   "devDependencies": {
     "jest": "^26.6.1"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {}
 }
