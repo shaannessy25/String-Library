@@ -47,11 +47,11 @@ String.prototype.snakeCase = (str) => {
 
 
 
-String.protoype.camelCase = (str) => {
-    return str.replace(/(?:^\w|[A-Z]|\b\w)/g, function (word, index) {
-        return index === 0 ? word.toLowerCase() : word.toUpperCase();
-    }).replace(/\s+/g, '');
-}
+// String.protoype.camelCase = (str) => {
+//     return str.replace(/(?:^\w|[A-Z]|\b\w)/g, function (word, index) {
+//         return index === 0 ? word.toLowerCase() : word.toUpperCase();
+//     }).replace(/\s+/g, '');
+// }
 
 
 String.protoype.shift = (str = '', step = 0) => {

@@ -38,11 +38,11 @@ test("Testing snakeCase", () => {
     expect(stringLib.snakeCase("find my folder")).toBe("find_my_folder")
 })
 
-test("Testing camelCase", () => {
-    expect(stringLib.camelCase("Hello World")).toBe("helloWorld")
-    expect(stringLib.camelCase("Correct path")).toBe("correctPath")
+// test("Testing camelCase", () => {
+//     expect(stringLib.camelCase("Hello World")).toBe("helloWorld")
+//     expect(stringLib.camelCase("Correct path")).toBe("correctPath")
 
-})
+// })
 
 test("Testing Shift", () => {
     expect(stringLib.shift("Hello", 1)).toBe("oHell")
