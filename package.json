@@ -19,11 +19,13 @@
   },
   "homepage": "https://github.com/shaannessy25/String-Library#readme",
   "devDependencies": {
+    "coveralls": "^3.1.0",
     "eslint": "^7.13.0",
     "jest": "^26.6.1"
   },
   "directories": {
-    "test": "tests"
+    "test": "tests",
+
   },
   "dependencies": {}
 }
