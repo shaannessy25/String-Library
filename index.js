@@ -1,17 +1,16 @@
 
-// Challenge 1 take input and capitalize first letter only
+
 String.prototype.capitalize = (str) => {
     return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase()
 }
 
 
-//Challenge 2 takes input string and capitalizes every letter of the string
+
 String.prototype.allCaps = (str) => {
     return str.toUpperCase()
 }
 
 
-//Challenge 3 take input string and capitalizes every first letter of every word
 String.prototype.capitalizeWords = (str) => {
     
     const splitStr = str.toLowerCase().split(' ');
@@ -23,14 +22,14 @@ String.prototype.capitalizeWords = (str) => {
     return splitStr.join(' ');
 }
 
-console.log(capitalizeWords("hello yall"))
-//Challenge 4 remove extra spaces from input string
+
+
 String.prototype.removeExtraSpaces = (str, joiner = ' ') => {
     return (str.trim()).split(' ').map((word) => word.trim()).filter((elem) => elem !== '')
     .join(joiner);
 }
 
-//Challenge 5 turn input string into kabob case
+
 String.prototype.kabobCase = (str) => {
     return str
         .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
@@ -38,7 +37,7 @@ String.prototype.kabobCase = (str) => {
         .join('-');
 }
 
-//Challenge 6 convert input string to snake case
+
 String.prototype.snakeCase = (str) => {
     return str
         .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
@@ -47,7 +46,7 @@ String.prototype.snakeCase = (str) => {
 }
 
 
-//Challenge 7 convert input string into camelCase
+
 String.protoype.camelCase = (str) => {
     return str.replace(/(?:^\w|[A-Z]|\b\w)/g, function (word, index) {
         return index === 0 ? word.toLowerCase() : word.toUpperCase();
