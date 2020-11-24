@@ -4,6 +4,9 @@ String.prototype.capitalize = (str) => {
     return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase()
 }
 
+// const capitalize = (str) => {
+//     return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase()
+// }
 
 
 String.prototype.allCaps = (str) => {
@@ -47,11 +50,11 @@ String.prototype.snakeCase = (str) => {
 
 
 
-// String.protoype.camelCase = (str) => {
-//     return str.replace(/(?:^\w|[A-Z]|\b\w)/g, function (word, index) {
-//         return index === 0 ? word.toLowerCase() : word.toUpperCase();
-//     }).replace(/\s+/g, '');
-// }
+String.protoype.camelCase = (str) => {
+    return str.replace(/(?:^\w|[A-Z]|\b\w)/g, function (word, index) {
+        return index === 0 ? word.toLowerCase() : word.toUpperCase();
+    }).replace(/\s+/g, '');
+}
 
 
 String.protoype.shift = (str = '', step = 0) => {
@@ -72,10 +75,10 @@ String.protoype.shift = (str = '', step = 0) => {
 
 // export{capitalize, allCaps}
 module.exports.capitalize = capitalize
-module.exports.allCaps = allCaps
-module.exports.capitalizeWords = capitalizeWords
-module.exports.removeExtraSpaces = removeExtraSpaces
-module.exports.kabobCase = kabobCase
-module.exports.snakeCase = snakeCase
-module.exports.camelCase = camelCase
-module.exports.shift = shift
+// module.exports.allCaps = allCaps
+// module.exports.capitalizeWords = capitalizeWords
+// module.exports.removeExtraSpaces = removeExtraSpaces
+// module.exports.kabobCase = kabobCase
+// module.exports.snakeCase = snakeCase
+// module.exports.camelCase = camelCase
+// module.exports.shift = shift
