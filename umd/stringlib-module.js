@@ -73,14 +73,14 @@
 
 
 
-    // export{capitalize, allCaps}
+
     module.exports.capitalize = capitalize;
-    // module.exports.allCaps = allCaps
-    // module.exports.capitalizeWords = capitalizeWords
-    // module.exports.removeExtraSpaces = removeExtraSpaces
-    // module.exports.kabobCase = kabobCase
-    // module.exports.snakeCase = snakeCase
-    // module.exports.camelCase = camelCase
-    // module.exports.shift = shift
+    module.exports.allCaps = allCaps
+    module.exports.capitalizeWords = capitalizeWords
+    module.exports.removeExtraSpaces = removeExtraSpaces
+    module.exports.kabobCase = kabobCase
+    module.exports.snakeCase = snakeCase
+    module.exports.camelCase = camelCase
+    module.exports.shift = shift
 
 })));
